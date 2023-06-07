@@ -41,12 +41,14 @@ void Usuario::menuUsuarios(){
     cout <<"\t\t\t------------------------------"<<endl; // Se imprime un mensaje de bienvenida al menú de usuarios
     cout <<"\t\t\t |MENU DE PROCESO DE USUARIOS|"<<endl;
     cout <<"\t\t\t------------------------------"<<endl;
-	cout<<"\t\t\t 1. Modificar Usuarios"<<endl; // Se imprime la opción para modificar usuarios
-	cout<<"\t\t\t 2. Borrar Usuarios"<<endl; // Se imprime la opción para borrar usuarios
-	cout<<"\t\t\t 3. Exit"<<endl; // Se imprime la opción para salir
+    cout<<"\t\t\t 1. Ingresar un usuario Usuarios"<<endl; // Se imprime la opción para modificar usuarios
+	cout<<"\t\t\t 2. Modificar Usuarios"<<endl;
+	cout<<"\t\t\t 3. Buscar Usuarios"<<endl; // Se imprime la opción para modificar usuarios
+	cout<<"\t\t\t 4. Borrar Usuarios"<<endl; // Se imprime la opción para borrar usuarios
+	cout<<"\t\t\t 5. Exit"<<endl; // Se imprime la opción para salir
 
 	cout<<"\t\t\t-------------------------------"<<endl;
-	cout<<"\t\t\tOpcion a escoger:[1/2/3]"<<endl; // Se imprime una línea indicando que se debe elegir una opción
+	cout<<"\t\t\tOpcion a escoger:[1/2/3/4/5]"<<endl; // Se imprime una línea indicando que se debe elegir una opción
 	cout<<"\t\t\t-------------------------------"<<endl;
 	cout<<"Ingresa tu Opcion: ";
     cin>>choice; // Se lee la opción elegida por el usuario
@@ -54,22 +56,34 @@ void Usuario::menuUsuarios(){
     switch(choice) // Se utiliza un switch para ejecutar el código correspondiente a la opción elegida por el usuario
     {
     case 1:
+         do // Se utiliza un do-while para permitir al usuario agregar más de una persona
+    	{
+    		ingresarUsuarios(); // Se llama al método para ingresar nuevos usuarios
+    		cout<<"\n\t\t\t Agrega otra persona(Y,N): ";
+    		cin>>x; // Se pregunta al usuario si desea agregar otra persona
+    		bitacora metodoAccion;
+    		metodoAccion.insertarAccion("701", "ING USUARIO");
+		}while(x=='y'||x=='Y'); // Se repite el ciclo mientras la respuesta del usuario sea afirmativa
+		break;
+    case 2:
 		modificarUsuarios(); // Se llama al método para modificar usuarios
-		metodoAccion.insertarAccion("7010", "UPD USUARIOS");
+		metodoAccion.insertarAccion("702", "UPD USUARIOS");
 		break;
-	case 2:
+    case 3:
+        buscar();
+        break;
+	case 4:
 		borrarUsurios(); // Se llama al método para borrar usuarios
-
-		metodoAccion.insertarAccion("7020", "DEL USUARIOS");
+		metodoAccion.insertarAccion("703", "DEL USUARIOS");
 		break;
-	case 3:
+	case 5:
 	    repetir=false; // Se cambia el valor de repetir a false para salir del menú
 		break;
 	default:
 		cout<<"\n\t\t\t Opcion invalida...Por favor prueba otra vez.."; // Se imprime un mensaje de error si la opción elegida es inválida
 	}
 	getch(); // Se espera a que el usuario presione una tecla para continuar
-    }while(choice!= 3); // Se repite el ciclo mientras la opción elegida por el usuario sea diferente a 6 (salida del menú)
+    }while(choice!= 5); // Se repite el ciclo mientras la opción elegida por el usuario sea diferente a 6 (salida del menú)
 }
 
 void Usuario::ingresarUsuarios(){
@@ -390,4 +404,39 @@ if (encontrado) {
 }
 string Usuario::getUsuarioAutenticado() {
     return usuarioAutenticado;
+}
+void Usuario::buscar()
+{
+	system("cls");
+	fstream file;
+	int found=0;
+	file.open("Usuarios1.txt",ios::in);
+	if(!file)
+	{
+		cout<<"\n-------------------------Datos del Usuario Buscado------------------------"<<endl;
+		cout<<"\n\t\t\tNo hay informacion...";
+	}
+	else
+	{
+		string nom;
+		cout<<"\n-------------------------Datos del Usuario Buscado------------------------"<<endl;
+		cout<<"\nIngrese el nombre del usuario que quiere buscar: ";
+		cin>>nom;
+		file >> usuario >> contrasena;
+		while(!file.eof())
+		{
+			if(nom==usuario)
+			{
+				cout<<"\t\t\t Nombre del Usuario: "<<usuario<<endl;
+				cout<<"\t\t\t Contraseña del Usuario: "<<contrasena<<endl;
+				found++;
+			}
+			file >> usuario >> contrasena;
+		}
+		if(found==0)
+		{
+			cout<<"\n\t\t\t Persona no encontrada...";
+		}
+		file.close();
+	}
 }

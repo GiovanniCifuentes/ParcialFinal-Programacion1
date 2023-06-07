@@ -21,6 +21,7 @@ public:
     void desplegarUsurios(); // Se define el método desplegarUsuarios, que permite mostrar todos los usuarios registrados
     void modificarUsuarios(); // Se define el método modificarUsuarios, que permite modificar los datos de un usuario
     void borrarUsurios(); // Se define el método borrarUsuarios, que permite eliminar un usuario
+    void buscar();
     bool verificarUsuario(); // Se define el método verificarUsuario, que verifica si el usuario y la contraseña son correctos
 
     string getUsuarioAutenticado();

@@ -26,3 +26,31 @@
 
 			Hora en que Intento Entrar al Programa: 9:23:45
 
+			Aplicacion: 701, Accion:ING USUARIO
+
+
+-------------------------------------------------Bitacora de Ingreso de Usuario---------------------------------------------
+
+
+
+			LOG
+
+			Nombre del usuario         : juan1
+
+			Fecha en que Inicio Cesion: 7/6/2023
+
+			Hora en que entro al programa: 9:55:38
+
+
+-------------------------------------------------Bitacora de Ingreso de Usuario---------------------------------------------
+
+
+
+			LOG
+
+			Nombre del usuario         : juan1
+
+			Fecha en que Inicio Cesion: 7/6/2023
+
+			Hora en que entro al programa: 9:56:7
+
