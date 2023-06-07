@@ -54,3 +54,16 @@
 
 			Hora en que entro al programa: 9:56:7
 
+
+-------------------------------------------------Bitacora de Ingreso de Usuario---------------------------------------------
+
+
+
+			LOG
+
+			Nombre del usuario         : Giovanni
+
+			Fecha en que Inicio Cesion: 7/6/2023
+
+			Hora en que entro al programa: 10:26:11
+

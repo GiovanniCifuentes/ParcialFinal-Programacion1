@@ -3,6 +3,8 @@
 #include <string>
 #include "Usuarios.h"
 #include "bitacora.h"
+#include "pais.h"
+#include "entrenador.h"
 
 using namespace std;
 
@@ -125,13 +127,11 @@ void menuCatalogos()
     cout <<"\t\t\t----------------------------------"<<endl;
 	cout<<"\t\t\t 1. CRUD PAIS"<<endl;
 	cout<<"\t\t\t 2. CRUD ENTRENADOR"<<endl;
-	cout<<"\t\t\t 3. CRUD TIPO DE PUESTO"<<endl;
-	cout<<"\t\t\t 4. CRUD EQUIPO"<<endl;
-	cout<<"\t\t\t 5. CRUD JUGADOR"<<endl;
-	cout<<"\t\t\t 6. Exit"<<endl;
+	cout<<"\t\t\t 3. Exit"<<endl;
+	cout<<"\t\t\t (Usted explico que eran solo dos CRUDS)"<<endl;
 
 	cout<<"\t\t\t-------------------------------"<<endl;
-	cout<<"\t\t\tOpcion a escoger:[1/2/3/4/5/6]"<<endl;
+	cout<<"\t\t\tOpcion a escoger:[1/2/3]"<<endl;
 	cout<<"\t\t\t-------------------------------"<<endl;
 	cout<<"Ingresa tu Opcion: ";
     cin>>choice;
@@ -139,17 +139,20 @@ void menuCatalogos()
     switch(choice)
     {
     case 1:
-
+        {
+            string id, name;
+            pais crudPais(id, name);
+            crudPais.menu();
+        }
 		break;
 	case 2:
+	    {
+	        string id, name1, name2, apellido1, apellido2, fechaNacimiento;
+	        entrenador crudEntrenador(id, name1, name2, apellido1, apellido2, fechaNacimiento);
+	        crudEntrenador.menu();
+	    }
 		break;
     case 3:
-        break;
-    case 4:
-        break;
-    case 5:
-        break;
-	case 6:
 	    menu();
     default:
         cout<<"\t\t\t\nSaliendo del menu";
