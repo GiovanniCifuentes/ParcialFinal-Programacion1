@@ -124,9 +124,9 @@ void pais::desplegar()
 		while(!file.eof())
 		{
 			total++;
-			cout<<"\t\t\t Id del Pais: \n"<<name<<endl;
+			cout<<"\t\t\t Id del Pais: "<<id<<endl;
 			file >> id;
-			cout<<"\t\t\t Nombre de pais: \n"<<name<<endl;
+			cout<<"\t\t\t Nombre de pais: "<<name<<endl;
 			file >> name;
 		}
 		if(total==0)
@@ -154,7 +154,7 @@ void pais::modificar()
 		cout<<"\n Ingrese Id del que quiere modificar: ";
 		cin>>participant_id;
 		file1.open("Record.txt",ios::app | ios::out);
-		file >> id >> name;;
+		file >> id >> name;
 		while(!file.eof())
 		{
 			if(participant_id!=id)
@@ -167,7 +167,6 @@ void pais::modificar()
 	            cin>>id;
 	            cout<<"\t\t\tIngresa Nombre del Pais     : ";
 	            cin>>name;
-	            file.open("Pais.txt", ios::app | ios::out);
 	            file1<<std::left<<std::setw(15)<< id <<std::left<<std::setw(15)<< name << "\n";
 				found++;
 			}

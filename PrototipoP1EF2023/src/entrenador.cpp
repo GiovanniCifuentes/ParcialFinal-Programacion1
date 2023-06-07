@@ -119,9 +119,9 @@ void entrenador::desplegar()
 		while(!file.eof())
 		{
 			total++;
-			cout<<"\t\t\t Id del entrenador: \n"<<id<<endl;
+			cout<<"\t\t\t Id del entrenador: "<<id<<endl;
 			file >> id;
-			cout<<"\t\t\t Nombre de entrenador: \n"<< name1 << " " << name2 << " " << apellido1 << " " << apellido2<<endl;
+			cout<<"\t\t\t Nombre de entrenador: "<< name1 << " " << name2 << " " << apellido1 << " " << apellido2<<endl;
 			file >> name1  >> name2  >> apellido1 >> apellido2;
 			cout<<"\t\t\t Fecha de Nacimiento del entrenador: \n"<<fechaNacimiento<<endl;
 
@@ -172,7 +172,6 @@ void entrenador::modificar()
 	cin>>apellido1;
 	cout<<"\t\t\tIngresa Fecha de Nacimiento del entrenador     : ";
 	cin>>fechaNacimiento;
-	            file.open("entrenador.txt", ios::app | ios::out);
 	            file1<<std::left<<std::setw(15)<< id <<std::left<<std::setw(15)<< name1 <<std::left<<std::setw(15)<< name2 <<std::left<<std::setw(15)<< apellido1 <<std::left<<std::setw(15)<< apellido2 <<std::left<<std::setw(15)<< fechaNacimiento <<"\n";
 				found++;
 			}

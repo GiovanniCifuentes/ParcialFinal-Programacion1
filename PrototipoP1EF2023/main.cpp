@@ -6,6 +6,7 @@
 #include "pais.h"
 #include "entrenador.h"
 #include "resultados.h"
+#include "aplicaciones.h"
 
 using namespace std;
 
@@ -226,12 +227,11 @@ void menuInformes()
     cout <<"\t\t\t----------------------------------"<<endl;
     cout <<"\t\t\t|BIENVENIDO AL MENU DE INFORMES  |"<<endl;
     cout <<"\t\t\t----------------------------------"<<endl;
-	cout<<"\t\t\t 1. Informes Datos Para Plantilla"<<endl;
-	cout<<"\t\t\t 2. Informes Datos Para Usuarios Nuevos"<<endl;
+	cout<<"\t\t\t 1. Aplicaciones"<<endl;
 	cout<<"\t\t\t 3. Exit"<<endl;
 
 	cout<<"\t\t\t-------------------------------"<<endl;
-	cout<<"\t\t\tOpcion a escoger:[1/2/3]"<<endl;
+	cout<<"\t\t\tOpcion a escoger:[1/2]"<<endl;
 	cout<<"\t\t\t-------------------------------"<<endl;
 	cout<<"Ingresa tu Opcion: ";
     cin>>choice;
@@ -239,14 +239,12 @@ void menuInformes()
     switch(choice)
     {
     case 1:
-        //empleado.desplegar();
-        metodoAccion.insertarAccion("7022", "INF. PLANILLA");
+        {
+            aplicaciones Aplicaciones;
+            Aplicaciones.menu();
+        }
 		break;
 	case 2:
-	    ingreso.desplegarUsurios();
-        metodoAccion.insertarAccion("7023", "INF. USUARIOS");
-		break;
-	case 3:
 	    menu();
     default:
         cout<<"\t\t\t\nSaliendo del menu";
