@@ -1,0 +1,28 @@
+
+-------------------------------------------------Bitacora de Ingreso de Usuario---------------------------------------------
+
+
+
+			LOG
+
+			Nombre del usuario         : Giovanni
+
+			Fecha en que Inicio Cesion: 7/6/2023
+
+			Hora en que entro al programa: 9:23:29
+
+
+-------------------------------------------------Bitacora de Ingreso de Usuario---------------------------------------------
+
+
+
+			NLOG
+
+			Nombre del usuario         : dhg
+
+			Contraseña con el que intento entrar: hd
+
+			Fecha en que Intento Inciar Cesion: 7/6/2023
+
+			Hora en que Intento Entrar al Programa: 9:23:45
+
