@@ -5,6 +5,7 @@
 #include "bitacora.h"
 #include "pais.h"
 #include "entrenador.h"
+#include "resultados.h"
 
 using namespace std;
 
@@ -122,6 +123,7 @@ void menuCatalogos()
     char x;
 	do
     {
+        system("cls");
     cout <<"\t\t\t----------------------------------"<<endl;
     cout <<"\t\t\t|BIENVENIDO AL MENU DE CATALOGO|"<<endl;
     cout <<"\t\t\t----------------------------------"<<endl;
@@ -174,6 +176,7 @@ void menuProcesos()
     int choice;
 	do
     {
+    system("cls");
     cout <<"\t\t\t----------------------------------"<<endl;
     cout <<"\t\t\t|BIENVENIDO AL MENU DE PROCESOS|"<<endl;
     cout <<"\t\t\t----------------------------------"<<endl;
@@ -190,6 +193,10 @@ void menuProcesos()
     switch(choice)
     {
     case 1:
+        {
+            resultados Resultados;
+            Resultados.desplegar();
+        }
 		break;
 	case 2:
         consulta.desplegarBitacora();
@@ -215,6 +222,7 @@ void menuInformes()
     char x;
 	do
     {
+    system("cls");
     cout <<"\t\t\t----------------------------------"<<endl;
     cout <<"\t\t\t|BIENVENIDO AL MENU DE INFORMES  |"<<endl;
     cout <<"\t\t\t----------------------------------"<<endl;

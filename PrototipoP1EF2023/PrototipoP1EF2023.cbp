@@ -36,9 +36,15 @@
 		</Compiler>
 		<Unit filename="include/Usuarios.h" />
 		<Unit filename="include/bitacora.h" />
+		<Unit filename="include/entrenador.h" />
+		<Unit filename="include/pais.h" />
+		<Unit filename="include/resultados.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Usuarios.cpp" />
 		<Unit filename="src/bitacora.cpp" />
+		<Unit filename="src/entrenador.cpp" />
+		<Unit filename="src/pais.cpp" />
+		<Unit filename="src/resultados.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

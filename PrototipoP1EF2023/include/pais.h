@@ -1,6 +1,7 @@
 #ifndef PAIS_H
 #define PAIS_H
 #include <iostream>
+#include "bitacora.h"
 
 using namespace std;
 

@@ -33,6 +33,8 @@ string pais::getName()
 
 void pais::menu()
 {
+    bitacora metodoAccion;
+    bool repetir = true;
     int choice;
 	char x;
 	do
@@ -64,21 +66,26 @@ void pais::menu()
     		cout<<"\n\t\t\t Agrega otro pais(Y,N): ";
     		cin>>x;
 		}while(x=='y'||x=='Y');
+		metodoAccion.insertarAccion("705", "ING PAIS");
 		break;
 	case 2:
 		desplegar();
+		metodoAccion.insertarAccion("706", "DES PAIS");
 		break;
 	case 3:
 		modificar();
+		metodoAccion.insertarAccion("707", "UPD PAIS");
 		break;
 	case 4:
 		buscar();
+		metodoAccion.insertarAccion("708", "SRCH PAIS");
 		break;
 	case 5:
 		borrar();
+		metodoAccion.insertarAccion("709", "DEL PAIS");
 		break;
 	case 6:
-		exit(0);
+		repetir=false;
 	default:
 		cout<<"\n\t\t\t Opcion invalida...Por favor prueba otra vez..";
 	}

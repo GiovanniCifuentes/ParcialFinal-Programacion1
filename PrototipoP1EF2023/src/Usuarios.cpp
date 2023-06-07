@@ -71,10 +71,11 @@ void Usuario::menuUsuarios(){
 		break;
     case 3:
         buscar();
+        metodoAccion.insertarAccion("703", "SRCH USUARIOS");
         break;
 	case 4:
 		borrarUsurios(); // Se llama al método para borrar usuarios
-		metodoAccion.insertarAccion("703", "DEL USUARIOS");
+		metodoAccion.insertarAccion("704", "DEL USUARIOS");
 		break;
 	case 5:
 	    repetir=false; // Se cambia el valor de repetir a false para salir del menú

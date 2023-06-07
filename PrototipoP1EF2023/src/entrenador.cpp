@@ -1,4 +1,5 @@
 #include "entrenador.h"
+#include "bitacora.h"
 #include<iostream>
 #include<fstream>
 #include<stdlib.h>
@@ -19,6 +20,8 @@ entrenador::entrenador(string id, string name1, string name2, string apellido1, 
 }
 void entrenador::menu()
 {
+    bitacora metodoAccion;
+    bool repetir = true;
     int choice;
 	char x;
 	do
@@ -50,21 +53,26 @@ void entrenador::menu()
     		cout<<"\n\t\t\t Agrega otro entrenador(Y,N): ";
     		cin>>x;
 		}while(x=='y'||x=='Y');
+		metodoAccion.insertarAccion("7010", "ING ENTRENADOR");
 		break;
 	case 2:
 		desplegar();
+		metodoAccion.insertarAccion("7020", "DES ENTRENADOR");
 		break;
 	case 3:
 		modificar();
+		metodoAccion.insertarAccion("7021", "UPD ENTRENADOR");
 		break;
 	case 4:
 		buscar();
+		metodoAccion.insertarAccion("7022", "SRCH ENTRENADOR");
 		break;
 	case 5:
 		borrar();
+		metodoAccion.insertarAccion("7023", "DEL ENTRENADOR");
 		break;
 	case 6:
-		exit(0);
+		repetir = false;
 	default:
 		cout<<"\n\t\t\t Opcion invalida...Por favor prueba otra vez..";
 	}

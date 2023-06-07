@@ -52,20 +52,22 @@
 	<conio.h>
 	<iomanip>
 
-1686155968 source:c:\users\steven cifuentes\documents\universidad 2022\3er semestre\programacion i\ejercicios o tareas de git\parcialfinal-programacion1\prototipop1ef2023\main.cpp
+1686158003 source:c:\users\steven cifuentes\documents\universidad 2022\3er semestre\programacion i\ejercicios o tareas de git\parcialfinal-programacion1\prototipop1ef2023\main.cpp
 	<iostream>
 	<fstream>
 	<string>
 	"Usuarios.h"
 	"bitacora.h"
 	"pais.h"
+	"entrenador.h"
+	"resultados.h"
 
 1686153723 c:\users\steven cifuentes\documents\universidad 2022\3er semestre\programacion i\ejercicios o tareas de git\parcialfinal-programacion1\prototipop1ef2023\include\usuarios.h
 	<iostream>
 	<fstream>
 	<string>
 
-1686153723 source:c:\users\steven cifuentes\documents\universidad 2022\3er semestre\programacion i\ejercicios o tareas de git\parcialfinal-programacion1\prototipop1ef2023\src\usuarios.cpp
+1686156918 source:c:\users\steven cifuentes\documents\universidad 2022\3er semestre\programacion i\ejercicios o tareas de git\parcialfinal-programacion1\prototipop1ef2023\src\usuarios.cpp
 	"Usuarios.h"
 	"bitacora.h"
 	<iostream>
@@ -75,7 +77,7 @@
 	<conio.h>
 	<iomanip>
 
-1686155968 source:c:\users\steven cifuentes\documents\universidad 2022\3er semestre\programacion i\ejercicios o tareas de git\parcialfinal-programacion1\prototipop1ef2023\src\pais.cpp
+1686156487 source:c:\users\steven cifuentes\documents\universidad 2022\3er semestre\programacion i\ejercicios o tareas de git\parcialfinal-programacion1\prototipop1ef2023\src\pais.cpp
 	"pais.h"
 	<iostream>
 	<fstream>
@@ -84,11 +86,13 @@
 	<conio.h>
 	<iomanip>
 
-1686154937 c:\users\steven cifuentes\documents\universidad 2022\3er semestre\programacion i\ejercicios o tareas de git\parcialfinal-programacion1\prototipop1ef2023\include\pais.h
+1686158034 c:\users\steven cifuentes\documents\universidad 2022\3er semestre\programacion i\ejercicios o tareas de git\parcialfinal-programacion1\prototipop1ef2023\include\pais.h
 	<iostream>
+	"bitacora.h"
 
-1686156024 source:c:\users\steven cifuentes\documents\universidad 2022\3er semestre\programacion i\ejercicios o tareas de git\parcialfinal-programacion1\prototipop1ef2023\src\entrenador.cpp
+1686158018 source:c:\users\steven cifuentes\documents\universidad 2022\3er semestre\programacion i\ejercicios o tareas de git\parcialfinal-programacion1\prototipop1ef2023\src\entrenador.cpp
 	"entrenador.h"
+	"bitacora.h"
 	<iostream>
 	<fstream>
 	<stdlib.h>
@@ -96,6 +100,25 @@
 	<conio.h>
 	<iomanip>
 
-1686155984 c:\users\steven cifuentes\documents\universidad 2022\3er semestre\programacion i\ejercicios o tareas de git\parcialfinal-programacion1\prototipop1ef2023\include\entrenador.h
+1686156487 c:\users\steven cifuentes\documents\universidad 2022\3er semestre\programacion i\ejercicios o tareas de git\parcialfinal-programacion1\prototipop1ef2023\include\entrenador.h
 	<iostream>
+
+1686158034 c:\users\steven cifuentes\documents\universidad 2022\3er semestre\programacion i\ejercicios o tareas de git\parcialfinal-programacion1\prototipop1ef2023\include\resultados.h
+	"bitacora.h"
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1686158018 source:c:\users\steven cifuentes\documents\universidad 2022\3er semestre\programacion i\ejercicios o tareas de git\parcialfinal-programacion1\prototipop1ef2023\src\resultados.cpp
+	"resultados.h"
+	"bitacora.h"
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
 
